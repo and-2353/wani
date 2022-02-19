@@ -13,7 +13,7 @@ header {
 header .headline{
     line-height: 50px;
     float: left;
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 100px;
 }
 
@@ -25,22 +25,53 @@ header .headline{
 }
 
 .nav-list-item {
-list-style: none;
-display: inline-block;
-margin: 0 20px;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
 }
 
 /* サイト全体のフォント指定 */
 body {
-    font-family: system-ui ;
-    }
-
-.wani{
-    position: relative;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 100;
 }
 
+.center {
+    text-align: center;
+}
+
+.center table,
+.center div,
+.center p {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wani{
+    margin: 10px auto;
+    width:100%;
+    margin-top: 0px;
+}
+
+
 .wani img{
-    width: 45%;
+    width: 100%;
+}
+
+
+/* 親要素(コンテナ) */
+.flex-container {
+	background-color: #000000;
+    width: 100%;
+	display: flex;
+}
+
+.flex-item {
+    width: 60%;
+	background-image: url(./materials/river_2.jpg);
+	color: #fff;
+    margin: auto;
+    padding: 100px;
 }
 
 .up_teeth input{
@@ -102,5 +133,20 @@ body {
     width:100%;
     height:120%;
     background-color: rgba(0,0,0,0.75);
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #337079;
+    color: white;
+    padding-top: 1em;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 100;
+}
+
+ul.footer-menu li {
+    display: inline;
 }
 
