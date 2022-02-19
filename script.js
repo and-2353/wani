@@ -10,10 +10,10 @@ $(function(){
             location.reload()
         }
         if(id<=6){
-            img.setAttribute('src', 'Teeth_Up_Wh.piko');
+            img.setAttribute('src', './materials/Teeth_Up_Wh.piko');
             clearNum += 1
         }else{
-            img.setAttribute('src', 'Teeth_Lw_Wh.piko');
+            img.setAttribute('src', './materials/Teeth_Lw_Wh.piko');
             clearNum +=1
         }
         if(clearNum == 11){
