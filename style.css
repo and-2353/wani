@@ -1,3 +1,40 @@
+* {
+    margin:0; padding:0;
+  }
+
+header {
+    height: 50px;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #337079;
+    color: white;
+}
+
+header .headline{
+    line-height: 50px;
+    float: left;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.nav-list {
+    line-height: 50px;
+    float: right;
+    margin-right: 100px;
+    list-style: none;
+}
+
+.nav-list-item {
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+}
+
+/* サイト全体のフォント指定 */
+body {
+    font-family: system-ui ;
+    }
+
 .wani{
     position: relative;
 }
