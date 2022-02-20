@@ -23,7 +23,15 @@ $(function(){
 
     })
 
-    $("#modal-open").click(
+    $("#modal-open-c").click(
+        function(){
+            $("body").append('<div id="modal-overlay"></div>');
+            $("#modal-overlay").fadeIn("slow");
+            $("#modal-content").fadeIn("slow");
+        }
+    )
+
+    $("#modal-open-s").click(
         function(){
             $("body").append('<div id="modal-overlay"></div>');
             $("#modal-overlay").fadeIn("slow");

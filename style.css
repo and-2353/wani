@@ -1,7 +1,9 @@
+/* 全体の設定 */
 * {
     margin:0; padding:0;
   }
 
+/* ヘッダーの設定 */
 header {
     height: 50px;
     width: 100%;
@@ -17,17 +19,18 @@ header .headline{
     margin-left: 100px;
 }
 
+/*ヘッダー右部のリスト(タイトルへ・クレジット など) */
 .nav-list {
     line-height: 50px;
     float: right;
-    margin-right: 100px;
+    margin-right: 80px;
     list-style: none;
 }
 
 .nav-list-item {
     list-style: none;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 /* サイト全体のフォント指定 */
@@ -48,11 +51,10 @@ body {
 }
 
 .wani{
-    margin: 10px auto;
+    margin: 0px auto;
     width:100%;
     margin-top: 0px;
 }
-
 
 .wani img{
     width: 100%;
@@ -74,19 +76,51 @@ body {
     padding: 100px;
 }
 
+.flex-item p{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+/* ボタンのスタイル */
+button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    /* 整える */
+    margin: auto; /* 前後の隙間 */
+    padding: 0.6em 1em; /* 塗りの余白 */
+    font-size: 1em; /* フォントサイズ */
+    background-color: #1aa1ff; /* 背景色 */
+    color: #FFF; /* テキストカラー */
+    cursor: pointer; /* カーソルを指マークに */
+    border-radius: 3px; /* 角の丸み */
+    border: 0; /* 枠線を消す */
+    transition: 0.3s; /* ホバーの変化を滑らかに */
+}
+  
+/* ボタンのホバー時の設定 */
+button:hover {
+    background-color: #064fda; /* 背景色 */
+}
+
+/* 上の歯の設定 */
 .up_teeth input{
     width: 15%;
     float: left;
 }
 
+.up_teeth{
+    position: absolute;
+    top:19;
+    left:10;
+}
+
+/* 下の歯の設定 */
 .lw_teeth input{
     width: 15%;
     float: left;
-}
-.up_teeth{
-    position: absolute;
-    top:119;
-    left:10;
 }
 
 .lw_teeth{
@@ -95,6 +129,7 @@ body {
     left:10;
 }
 
+/* モーダルダイヤログの設定 */
 #modal-content{
     width:50%;
     margin:1.5em auto 0;
@@ -114,6 +149,7 @@ body {
     margin-top:0;
 }
 
+/* リンクとリンクホバーの設定 (多分使わない)*/
 .button-link{
     color: #0000ff;
     text-decoration:underline;

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang= "ja">
+<head>
+    <meta charset="utf-8">
+    <title>wani -Play</title>
+    <link rel="icon" href="./materials/crocodilia.gif">
+    <meta name="description" content="ワニのゲームです" >
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1 class="headline">
+            <a>怒るワニ</a>
+        </h1>
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <p>
+                    <button onclick="location.href='./index.html'">タイトルへ</button>
+                </p>
+            </li>
+            <li class="nav-list-item">
+                <p>
+                    <button id="modal-open-c">クレジット</button>
+                </p>
+            </li>
+            <li class="nav-list-item">
+                <p>
+                    <button id="modal-open-s">設定</button>
+                </p>
+            </li>
+        </ul>
+    </header>
+
+    <!-- main content -->
+    <div class="wani">
+        
+        <div class="flex-container">
+            <div class="flex-item">
+
+                <div id="modal-content">
+                    <p>モーダルウインドウが開いている。</p>
+                    <p><a id="modal-close" class="button-link">閉じる</a></p>
+                </div>
+
+                <img src="./materials/wani.piko"/>
+                    
+                <div class="teeth">
+                    <div class="up_teeth">
+                        <input class="bt" id="1" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
+                        <input class="bt" id="2" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
+                        <input class="bt" id="3" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
+                        <input class="bt" id="4" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
+                        <input class="bt" id="5" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
+                        <input class="bt" id="6" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
+                    </div>
+                    <div class="lw_teeth">
+                        <input class="bt" id="7" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
+                        <input class="bt" id="8" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
+                        <input class="bt" id="9" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
+                        <input class="bt" id="10" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
+                        <input class="bt" id="11" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
+                        <input class="bt" id="12" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    
+    
+    
+    
+
+    <!-- footer -->
+    <footer>
+        <ul class="footer-menu">
+            <li>home</li>
+            <li>｜</li>
+            <li>about</li>
+            <li>｜</li>
+            <li>service</li>
+            <li>｜</li>
+            <li>Contact Us</li>
+        </ul>
+        <p>©2022 @and-2353. All rights reserved.</p>
+    </footer>
+</body>
