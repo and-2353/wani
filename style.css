@@ -15,7 +15,7 @@ header {
 header .headline{
     line-height: 50px;
     float: left;
-    font-size: 30px;
+    font-size: 50px;
     margin-left: 100px;
 }
 
@@ -35,8 +35,8 @@ header .headline{
 
 /* サイト全体のフォント指定 */
 body {
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 100;
+    font-family: "Dela Gothic One", "Noto Sans JP", sans-serif;
+    font-weight: 10;
 }
 
 .center {
@@ -56,8 +56,17 @@ body {
     margin-top: 0px;
 }
 
-.wani img{
-    width: 100%;
+
+.uwa {
+    width: 26%;
+}
+
+.sita {
+    width: 26%;
+}
+
+.yokonarabi {
+    display: flex;
 }
 
 
@@ -66,6 +75,16 @@ body {
 	background-color: #000000;
     width: 100%;
 	display: flex;
+}
+
+.img-container {
+	position: relative;
+}
+
+.img-container input {
+	position: absolute;
+    top: 0px;
+    left:100px;
 }
 
 .flex-item {
@@ -105,7 +124,7 @@ button:hover {
     background-color: #064fda; /* 背景色 */
 }
 
-/* 上の歯の設定 */
+/* 上の歯の設定 
 .up_teeth input{
     width: 15%;
     float: left;
@@ -116,8 +135,9 @@ button:hover {
     top:19;
     left:10;
 }
+*/
 
-/* 下の歯の設定 */
+/* 下の歯の設定 
 .lw_teeth input{
     width: 15%;
     float: left;
@@ -128,6 +148,7 @@ button:hover {
     top:174;
     left:10;
 }
+*/
 
 /* モーダルダイヤログの設定 */
 #modal-content{

@@ -45,30 +45,53 @@
                     <p>モーダルウインドウが開いている。</p>
                     <p><a id="modal-close" class="button-link">閉じる</a></p>
                 </div>
-
-                <img src="./materials/wani.piko"/>
-                    
-                <div class="teeth">
-                    <div class="up_teeth">
-                        <input class="bt" id="1" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
-                        <input class="bt" id="2" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
-                        <input class="bt" id="3" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
-                        <input class="bt" id="4" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
-                        <input class="bt" id="5" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
-                        <input class="bt" id="6" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
+                
+                <div id="img-container">
+                    <div class="yokonarabi">
+                        <ul>
+                            <li><img id="uwa" src="./materials/wani_uwaago.gif"></li>
+                            <li><img id="sit" src="./materials/wani_sitaago.gif"></li>
+                        </ul>
+                        
+                        <img id="pic" src="./materials/wani_r.gif" name="wani">
                     </div>
-                    <div class="lw_teeth">
-                        <input class="bt" id="7" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
-                        <input class="bt" id="8" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
-                        <input class="bt" id="9" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
-                        <input class="bt" id="10" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
-                        <input class="bt" id="11" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
-                        <input class="bt" id="12" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
+                    
+                    <script type="text/javascript">
+                        img = new Array("./materials/wani_r.gif","./materials/wani_r2.gif"); //*1
+                        count = -1; //*2
+                        imgTimer();
+                        
+                        function imgTimer() {
+                            //画像番号
+                            count++; //*3
+                            //画像の枚数確認
+                            if (count == img.length) count = 0; //*4
+                            //画像出力
+                            document.wani.src = img[count]; //*5
+                            //次のタイマー呼びだし
+                            setTimeout("imgTimer()",750); //*6
+                        }
+                    </script>
+                    <div class="teeth">
+                        <div class="up_teeth">
+                            <input class="bt" id="1" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
+                            <input class="bt" id="2" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
+                            <input class="bt" id="3" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
+                            <input class="bt" id="4" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
+                            <input class="bt" id="5" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
+                            <input class="bt" id="6" type="image" src="./materials/Teeth_Up_Br.piko" alt="上の歯" ></input>
+                        </div>
+                        <div class="lw_teeth">
+                            <input class="bt" id="7" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
+                            <input class="bt" id="8" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
+                            <input class="bt" id="9" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
+                            <input class="bt" id="10" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
+                            <input class="bt" id="11" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
+                            <input class="bt" id="12" type="image" src="./materials/Teeth_Lw_Br.piko" alt="下の歯" ></input>
+                        </div>
                     </div>
                 </div>
-                
             </div>
-            
         </div>
     </div>
 
