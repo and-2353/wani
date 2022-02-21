@@ -19,7 +19,7 @@ $(function(){
             clearNum += 1;
         }
         if(clearNum == 2){
-            
+            img.setAttribute('src', './materials/Teeth_Lw_Wh.piko');
 
             alert("GAME CLEAR!");
 
@@ -51,10 +51,23 @@ $(function(){
     )
       
     });
-
-    
-
     $(this).blur();
     if($("#modal-overlay")[0]) return false;
     
+    window.onload = function() {
+        
+        var my_audio = new Audio("./materials/audio/決定、ボタン押下34.mp3");
+            //ボタンにクリックイベントを設定
+            document.getElementById("modal-open-r").onclick = function() {
+                my_audio.currentTime = 0;  //再生開始位置を先頭に戻す
+                my_audio.play();  //サウンドを再生
+            }
+            document.getElementById("modal-open-s").onclick = function() {
+                my_audio.currentTime = 0;  //再生開始位置を先頭に戻す
+                my_audio.play();  //サウンドを再生
+            }
+    }
+
 })
+
+

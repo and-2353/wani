@@ -17,18 +17,74 @@
             <a>怒るワニ</a>
         </h1>
         <ul class="nav-list">
-            <li class="nav-list-item"><a>Home</a></li>
-            <li class="nav-list-item">About</li>
-            <li class="nav-list-item">Topic</li>            
+            
+            <li class="nav-list-item">
+                <p>
+                    <button id="modal-open-r">ルール</button>
+                </p>
+            </li>
+            <li class="nav-list-item">
+                <p>
+                    <button id="modal-open-s">設定</button>
+                </p>
+            </li>
         </ul>
     </header>
 
     
     <div class="flex-container">
-        <div class="flex-item">    
+        <div class="flex-item">
+
+            <div id="modal-content-r">
+                <h1>ルール</h1>
+                <br/><br/>
+                <p>
+                    ワニの歯をクリックして掃除しよう<br/>ただし、間違った歯をクリックするとワニは爆発する<br/>間違った歯を残して、すべての歯を掃除できればクリア
+                </p>
+                    
+                <p><a id="modal-close-r" class="button-link">閉じる</a></p>
+            </div>
+            <div id="modal-content-s">
+                <h1>設定</h1>
+                <br/><br/>
+                <h2>サウンド</h2>
+                <p>
+                    <button onclick="stop()">OFF</button>
+                    <button onclick="play()" id="play">ON</button>
+                </p>
+                <p><a id="modal-close-s" class="button-link">閉じる</a></p>
+            </div>
             <p>
                 <button onclick="location.href='./main.html'">スタート</button>
             </p>
+
+            <script type="text/javascript">
+                
+                var music = new Audio();
+                function init() {
+                    music.preload = "auto";
+                    music.src = "./materials/audio/Isteach_an_bhaile.mp3";
+                    music.load();
+
+                    music.addEventListener("ended", function () {
+                    music.currentTime = 0;
+                    music.play();
+                    }, false);
+                }
+
+                function play() {
+                    music.loop = true;
+                    music.play();
+                }
+
+                function stop() {
+                    music.pause();
+                    music.currentTime = 0;
+                }
+
+                init();
+
+            </script>
         </div>
         
     </div>
