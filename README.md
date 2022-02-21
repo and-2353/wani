@@ -16,6 +16,7 @@ Play：https://and-2353.github.io/wani/
 ## 修正点
 - GAME CLEAR, GAME OVER 時の処理が地味
 - 同じボタン押してもclear_num が加算されるバグがある
+- デモ動画(mp4)をとったけど README への記載方法がわからず画像のみ掲載してある
 
 
 
