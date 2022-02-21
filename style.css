@@ -36,7 +36,7 @@ header .headline{
 /* サイト全体のフォント指定 */
 body {
     font-family: "Dela Gothic One", "Noto Sans JP", sans-serif;
-    font-weight: 10;
+    font-weight: 400;
 }
 
 .center {
@@ -45,6 +45,7 @@ body {
 
 .center table,
 .center div,
+.center h1,
 .center p {
     margin-right: auto;
     margin-left: auto;
@@ -77,22 +78,29 @@ body {
 	display: flex;
 }
 
-.img-container {
+.imgcontainer {
 	position: relative;
 }
 
-.img-container input {
-	position: absolute;
-    top: 0px;
-    left:100px;
+.teeth {
+	z-index: 1;
+    position: absolute;
+    bottom: -5px;
+    display: inline-block;
 }
 
 .flex-item {
     width: 60%;
 	background-image: url(./materials/river_2.jpg);
-	color: #fff;
+	color: #000000;
     margin: auto;
     padding: 100px;
+}
+
+.flex-item h1{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
 }
 
 .flex-item p{
@@ -151,8 +159,21 @@ button:hover {
 */
 
 /* モーダルダイヤログの設定 */
-#modal-content{
+#modal-content-s{
     width:50%;
+    height: 50%;
+    margin:1.5em auto 0;
+    padding:10px 20px;
+    border: 2px solid #aaaaaa;
+    background: #ffffff;
+    z-index: 2;
+    position: fixed;
+    display:none;
+}
+
+#modal-content-r{
+    width:50%;
+    height: 50%;
     margin:1.5em auto 0;
     padding:10px 20px;
     border: 2px solid #aaaaaa;
@@ -163,11 +184,11 @@ button:hover {
 }
 
 .modal-p{
-    margin-top: 1em;
+    margin-top: 10em;
 }
 
 .modal-p:first-child{
-    margin-top:0;
+    margin-top:10;
 }
 
 /* リンクとリンクホバーの設定 (多分使わない)*/
