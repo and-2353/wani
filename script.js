@@ -14,12 +14,12 @@ $(function(){
             location.reload();
         }
         if(id<=3 && !(id in clicked_ids)){
-            img.setAttribute('src', './materials/Teeth_Lw_Wh.piko');
+            img.setAttribute('src', './materials/teeth/Teeth_Lw_Wh.piko');
             clicked_ids.push(id);
             clearNum += 1;
         }
         if(clearNum == 2){
-            img.setAttribute('src', './materials/Teeth_Lw_Wh.piko');
+            img.setAttribute('src', './materials/teeth/Teeth_Lw_Wh.piko');
 
             alert("GAME CLEAR!");
 
